@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Property Search</title>
+</head>
+<body>
+<form method="post"  action="https://request-inspector.glitch.me">
+    <div>
+        <h4>Choose Property Type:</h4>
+        <label name="property">
+            <input type="checkbox" id="house" name="property" value="house"> House
+        </label>
+        <label>
+            <input type="checkbox" id="apartment" name="property" value="apartment"> Apartment
+        </label>
+        <label>
+            <input type="checkbox" id="townhomes" name="property" value="townhomes"> Townhome
+        </label>
+    </div>
+    <div>
+        <h4> Choose square footage: </h4>
+        <label name="sqft">
+            <input type="checkbox" id="x4" name="sqft" value="500-700"> 500-700 sqft
+        </label>
+        <label>
+            <input type="checkbox" id="x5" name="sqft" value="700-900"> 700-900 sqft
+        </label>
+        <label>
+            <input type="checkbox" id="x6" name="sqft" value="900-1200"> 900-1200 sqft
+        </label>
+    </div>
+    <div>
+        <h4> Choose price range:</h4>
+        <select id="low" name="minmax">
+            <option name="minmax" value="money">$500-$700</option>
+            <option name="minmax" value="money">$700-$900</option>
+            <option name="minmax" value-="money">$900-$1200</option>
+        </select>
+    </div>
+    <div>
+        <h4> Enter zipcode for property areas:</h4>
+        <textarea id="zipcode" type="text" name="zipcode" placeholder="Enter zipcode here"></textarea>
+    </div>
+    <div>
+        <h4>Choose Bedrooms and Bathrooms:</h4>
+        <h3>Bedrooms:</h3>
+        <label name="br">
+            <input type="checkbox" id="x7" name="1br" value="1br"> 1
+        </label>
+        <label name="br">
+            <input type="checkbox" id="x8" name="2br" value="2br"> 2
+        </label>
+        <label name="br">
+            <input type="checkbox" id="x9" name="3br" value="3br"> 3
+        </label>
+        <h3>Bathrooms:</h3>
+        <label name="bth">
+            <input type="checkbox" id="x10" name="1bth" value="1bth"> 1
+        </label>
+        <label name="bth">
+            <input type="checkbox" id="x12" name="2bth" value="2bth"> 2
+        </label>
+        <label name="bth">
+            <input type="checkbox" id="x13" name="3bth" value="3bth"> 3
+        </label>
+    </div>
+    <button type="submit">Search Now</button>
+</form>
+</body>
+</html>

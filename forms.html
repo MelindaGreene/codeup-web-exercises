@@ -10,7 +10,7 @@
 </style>
 <body>
 
-<form action="https://www.elformo.com/forms/c802fea0-b7a6-4b95-8b29-54647cbfae5f" method="post" accept-charset="UTF-8">
+<form method="POST" action="https://request-inspector.glitch.me/">
     <div>
         <label for="username" value="username"> Username</label>
         <input id="username" name="username" type="text" placeholder=" Enter username here">
@@ -27,7 +27,7 @@
         <br>
     <div>
     <h4> Tell us about yourself</h4>
-    <textarea name="bio" placeholder="Tell us about yourself"></textarea>
+    <textarea name="bio" placeholder="Tell us about yourself" cols="30" row="10"></textarea>
         <br>
         <button type="submit">Submit</button>
     </div>
@@ -35,9 +35,9 @@
     <div>
         <h4> What web browser did you use? </h4>
         <select id="web browser" name="web browser">
-            <option value="1"> Internet Explorer</option>
-            <option value="2" selected> Google Chrome </option>
-            <option value="3"> Firefox </option>
+            <option value="internet"> Internet Explorer</option>
+            <option value="google" selected> Google Chrome </option>
+            <option value="firefox"> Firefox </option>
             <button type="submit"> Submit </button>
         </select>
 
@@ -45,13 +45,13 @@
 
     <div>
     <h4> How did you hear about us? </h4>
-        <label> <input type="radio" name="x" value="billboard"> Billboard</label>
+        <label name="advertisement"> <input type="checkbox" name="advertisement" value="billboard" > Billboard</label>
         <br>
-        <label> <input type="radio" name="x" value="radio advertisement"> Radio Advertisement </label>
+        <label name="advertisement"> <input type="checkbox" name="advertisement" value="radio advertisement"> Radio Advertisement </label>
         <br>
-        <label> <input type="radio" name="x" value="internet advertisement"> Intenet Advertisement</label>
+        <label name="advertisement"> <input type="checkbox" name="advertisement" value="internet advertisement"> Intenet Advertisement</label>
         <br>
-        <label> <input type="radio" name="x" value="Other"> Other </label>
+        <label name="advertisement"> <input type="checkbox" name="advertisement" value="Other"> Other </label>
         <br>
         <button type="submit"> Submit</button>
     </div>
