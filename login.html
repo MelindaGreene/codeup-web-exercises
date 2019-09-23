@@ -1,35 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/login.css">
     <meta charset="UTF-8">
     <title>Login</title>
 </head>
 <body>
 <form method="POST" action="https://request-inspector.glitch.me/">
     <div>
-        <label for="username">Username</label>
-        <input id="username" type="username" name="username" placeholder="Required">
+        <label for="username">Username</label> <br>
+        <input id="username" type="username" name="username">
     </div>
 <br>
-    <div>
-        <label for="email"> Email </label>
-        <input id="email" type="email" name="email" placeholder="Required">
-    </div>
+
 <br>
     <div>
-        <label for="password">Password</label>
-        <input id="password" type="password" name="password" placeholder="Required">
+        <label for="password" id="forpass">Password</label> <br>
+        <input id="password" type="password" name="password">
     </div>
 <br>
-    <div>
-        <label>
-            <input type="checkbox" id="mailing_list" name="mailing_list" value="yes" checked>Keep me logged in
-            for 2 weeks
-        </label>
-    </div>
+
 <br>
     <div>
-        <button type="submit"> Login</button>
+        <button type="submit"> <strong>Login </strong></button>
     </div>
 </form>
 </body>

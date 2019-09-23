@@ -1,3 +1,154 @@
-.fancy-header{
-    color: aqua;
+
+
+body {
+    background-color: powderblue;
+    background-repeat: repeat;
 }
+
+#nav {
+    width:750px;
+    margin:0 auto;
+    list-style:none;
+    font-family: 'Hind Madurai', sans-serif;
+}
+#nav li {
+    float:left;
+}
+#nav a {
+    display:block;
+    text-align:center;
+    width:150px;
+    text-decoration:none;
+}
+
+
+
+a:link {
+    color: White;
+}
+a:hover {
+    color: coral;
+}
+
+.box {
+    border: 0px;
+    width: 1550px;
+    height: 50px;
+    padding:70px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    box-shadow: 0 5px 15px rgba( 10,10,10, .5);
+    font-size: 45px;
+    background-image: linear-gradient(navajowhite, lightgray);
+
+}
+
+#quote {
+    text-align: center;
+    font-size:30px;
+    font-family: 'Baloo Da', cursive;
+    color: cadetblue;
+
+}
+
+.specialbox {
+    border: 5px solid white;
+    width: 210px;
+    height: 150px;
+    padding:50px;
+    color: #fff;
+    margin-top: 0px;
+    margin-right: 180px;
+    margin-left: 54px;
+    margin-bottom: 5px;
+    box-shadow: 0 5px 15px rgba(251, 173, 3, 0.95);
+    font-family: 'Baloo Da', cursive;
+}
+
+
+#mainbox {
+    background-color: purple;
+    text-align: center;
+    font-family: 'Baloo Da', cursive;
+    color: cornflowerblue;
+}
+
+
+#core {
+    float: left;
+    background-color: limegreen;
+    text-align: left;
+}
+
+
+#process {
+    float: left;
+    background-color: goldenrod;
+
+}
+#vision {
+    float: left;
+    background-color: cornflowerblue;
+    font-size: 15px;
+}
+
+
+.business img {
+    padding: 40px;
+    width: 300px;
+    height: auto;
+    float: left;
+}
+
+#product {
+    text-align: center;
+    color: goldenrod;
+    font-size: 24px;
+    font-family: 'Baloo Da', cursive;
+}
+
+
+.h2 {
+    font-size: 20px;
+    font-family: 'Fredoka One', cursive;
+    text-decoration: underline;
+
+}
+
+img {
+    margin: 4px;
+    border:0px solid #021a40;
+    box-shadow: 0 5px 15px rgba( 10,10,10, .5);
+
+}
+
+table th:hover {
+    background-color: cornflowerblue;
+}
+
+table, th, td {
+     color: olive;
+    border: 5px solid #fff;
+    padding: 15px;
+}
+table{
+    border-collapse: collapse;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+th {
+    font-family: 'Baloo Da', cursive;
+    background-color: goldenrod;
+    text-align: left;
+}
+td {
+    font-family: 'Hind Madurai', sans-serif;
+    background-color: antiquewhite;
+}
+
+
+
+
+
+
