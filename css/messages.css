@@ -18,17 +18,17 @@ body, html {
     background-color: #cddeff;
 }
 
-.message-info {
-    color: #514ea5;
-    background-color: #cddeff;
+.message-success {
+    color: #368250;
+    background-color: #cff2da;
 }
 
-.message-info {
-    color: #514ea5;
-    background-color: #cddeff;
+.message-warning {
+    color: #9f8e3a;
+    background-color: #fcfbc9;
 }
 
-.message-info {
-    color: #514ea5;
-    background-color: #cddeff;
+.message-error {
+    color: #9f4659;
+    background-color: #fad2d7;
 }

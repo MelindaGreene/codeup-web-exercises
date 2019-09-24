@@ -94,7 +94,7 @@ a {
 .timeline {
     background-color: white;
     margin: .5em 0;
-    width: calc(50%-1em);
+    width: calc(50%- 1em);
     float: left;
 }
 
