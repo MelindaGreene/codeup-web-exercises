@@ -126,7 +126,7 @@ a {
 
 .media-body {
     width: 100%;
-    position: left;
+    position:left;
     calc(100% - 50px)
 }
 
