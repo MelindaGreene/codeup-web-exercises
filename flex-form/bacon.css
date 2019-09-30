@@ -1,0 +1,95 @@
+body {
+   /* display:grid;
+    justify-content: center;
+    grid-row-gap: 60px;
+    grid-column-gap: 60px;
+    grid-template-columns: 20% 20% 20%;
+    grid-template-rows: 300px 300px 300px;
+    padding-top: 100px;
+    margin: 30px;
+    background-color: white; */
+}
+
+
+
+
+#bacon {
+    display:grid;
+    justify-content: center;
+    grid-row-gap: 60px;
+    grid-column-gap: 60px;
+    grid-template-columns: 20% 20% 20%;
+    grid-template-rows: 300px 300px 300px;
+    padding-top: 100px;
+    margin: 30px;
+    background-color: white;
+
+}
+
+
+#my {
+    align-content: center;
+    width: 300px;
+    height:300px;
+    border: 60px black;
+    background-color: white;
+    margin: 3em;
+    text-align: center;
+    padding: 5px;
+    grid-area: 1 / 1 / 1 / 1
+}
+
+#hoe {
+    align-content: center;
+    width: 300px;
+    height:300px;
+    background-color: white;
+    margin: 3em;
+    text-align: center;
+    padding: 5px;
+    align-content: center;
+    grid-area: 1 / 2 / 1/ 2;
+
+}
+
+#brings {
+    align-content: center;
+    width: 300px;
+    height:300px;
+    background-color: white;
+    margin: 3em;
+    text-align: center;
+    padding: 5px;
+
+
+}
+
+#home {
+    align-content: center;
+    width: 300px;
+    height:300px;
+    background-color: white;
+    margin: 3em;
+    text-align: center;
+    padding: 5px;
+
+}
+
+#the {
+    width: 300px;
+    height:300px;
+    background-color: white;
+    margin: 3em;
+    text-align: center;
+    padding: 5px;
+}
+
+#pig {
+    width: 300px;
+    height:300px;
+    background-color: white;
+    margin: 3em;
+    text-align: center;
+    padding: 5px;
+
+}

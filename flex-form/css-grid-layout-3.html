@@ -2,27 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>css-grid-layout-1</title>
+    <title>Title</title>
 </head>
 
 <style>
 body {
-
-    display:grid;
-    background-color: #feffff;
-    grid-template-columns: 20% 1fr 15%;
-    grid-template-rows: 80px 1fr 70px;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    display: grid;
+    grid-template-rows: 80px 1fr 70px 70px;
+    grid-template-columns: 20% 1fr;
     height: 100vh;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+
 }
 
+
 #header {
-    grid-area: 1 / 1 / 1/ 4;
+    grid-area: 1 / 1 / 1/ 3;
     background-color: yellowgreen;
 }
 #mainnavi {
-    grid-area: 2 / 1 / 5 / 1;
+    grid-area: 2 / 1 / 4 / 1;
     background-color: #9f8e3a;
 
 }
@@ -32,26 +32,32 @@ body {
     background-color: #9f4659;
 }
 #ads {
-    grid-area: 2 / 3 / 3/ 4;
+    grid-area: 3 / 2 / 4 / 2;
     background-color: #514ea5;
 }
 #footer {
 
-    grid-area: 3 / 2/ 4 / 4;
+    grid-area: 4 / 1 / 4 / 3;
     background-color: yellow;
 }
+
+
+
+
+
+
 </style>
 
 
 
 
+
 <body>
-
-
 <div id="header">Header</div>
 <div id="mainnavi">Nav</div>
 <div id="article">Article </div>
 <div id="ads">Ads</div>
 <div id="footer">Footer</div>
+
 </body>
 </html>

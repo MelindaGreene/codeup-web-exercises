@@ -1,0 +1,128 @@
+body {
+    display: grid;
+    grid-template-rows: 5% 400px 400px 400px 200px 100px 1fr;
+    grid-template-columns: 200px 700px 400px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 0;
+    background-color: #feffff;
+}
+a:hover  {
+    background-color: #feffff;
+    height: 3em;
+}
+a {
+    margin: 10px;
+}
+
+#star {
+    grid-area: 1/ 1/ 2 / 4;
+}
+
+ul>nav{
+    width: 5px;
+    height: 3px;
+    background-color: white;
+}
+
+
+
+#navigation {
+    display: flex;
+    margin: 1px;
+    height: 2em;
+    color: rgba(212, 222, 189, 0.82);
+    width: 100%;
+    top: 0;
+    padding: 10px 0;
+    background-color: #9c619f;
+
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+#Menu {
+    display: flex;
+
+    grid-area: 2 /1/ 7/ 2;
+    background-color: #514ea5;
+
+}
+
+#bottle  {
+    display:inline-grid;
+    grid-template-columns: 600px;
+    grid-template-rows: 350px 350px 350px;
+}
+#strange {
+            display: inline-grid;
+            grid-template-rows: repeat(6, 200px);
+            grid-template-columns: repeat(1, 300px);
+}
+
+#ad1 {
+    width: 300px;
+    height: 10%;
+    border: 1px solid #4196d4;
+    padding: 50px;
+    margin: 10px;
+    grid-area: 1 / 2 / 2 / 1;
+}
+#ad2 {
+    width: 300px;
+    height: 40px;
+    border: 1px solid #4196d4;
+    padding: 50px;
+    margin: 10px;
+
+    grid-area: 2 / 1 / 2 / 2;
+}
+
+#ad3 {
+    width: 300px;
+    height: 10%;
+    border: 1px solid #4196d4;
+    padding: 50px;
+    margin: 10px;
+}
+
+#ad4 {
+    width: 300px;
+    height: 40px;
+    border: 1px solid #4196d4;
+    padding: 50px;
+    margin: 10px;
+
+}
+
+#ad5 {
+    width: 300px;
+    height: 10%;
+    border: 1px solid #4196d4;
+    padding: 50px;
+    margin: 10px;
+}
+
+#ad6 {
+    width: 300px;
+    height: 40px;
+    border: 1px solid #4196d4;
+    padding: 50px;
+    margin: 10px;
+}
+
+#foot {
+    grid-area: 5 / 2 / 6 / 4;
+    background-color: #4243d4;
+}
+
+#power {
+    background-color: #9f95ff;
+    grid-area: 6/ 2/ 6 / 4 ;
+
+}
