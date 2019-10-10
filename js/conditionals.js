@@ -18,19 +18,19 @@
 
 
 //
-// var confirmation = confirm(" Would you like to enter a number?");
-// var enterNumber = parseFloat(prompt("Please enter number"));
-//     if(enterNumber % 2 === 0){
-//         alert(" This is an even number ");
-//     } else {
-//         alert(" This number is odd ");
-//     }
-//        alert(enterNumber + 100);
-//      if(enterNumber <= 0){
-//          alert("This number is negative")
-//      }else {
-//          alert("This number is positive")
-//      }
+var confirmation = confirm(" Would you like to enter a number?");
+var enterNumber = parseFloat(prompt("Please enter number"));
+    if(enterNumber % 2 === 0){
+        alert(" This is an even number ");
+    } else {
+        alert(" This number is odd ");
+    }
+       alert(enterNumber + 100);
+     if(enterNumber <= 0){
+         alert("This number is negative")
+     }else {
+         alert("This number is positive")
+     }
 
 
 
