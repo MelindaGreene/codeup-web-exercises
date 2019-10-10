@@ -182,13 +182,13 @@ console.log("hello from conditionals lec.js!");
 //     // code here gets executed if condition1 nor condition2 evaluate to true
 // }
 
-// var thirteenOrOlder = confirm(" Are you 13 year of age or older?");
-// if (thirteenOrOlder === true){
-//     alert(" You may proceed ");
-// } else {
-//     alert("Sorry, you are not able to proceed ");
-// }
-//
+var thirteenOrOlder = confirm(" Are you 13 year of age or older?");
+if (thirteenOrOlder === true){
+    alert(" You may proceed ");
+} else {
+    alert("Sorry, you are not able to proceed ");
+}
+
 
 // =============== IF / ELSE IF/ELSE STATEMENT EXAMPLES ================
 // Together: Write an if/else if/else statement that alerts "It's snowing!" if weather is equal to "snowing", alerts "It's raining" if weather is equal to "raining", alerts "have a nice day" for all other cases
@@ -207,18 +207,18 @@ if(weather === "snowing"){
 
 // Together: refactor the above statement as a function
 
-// function checkWeather(weather){
-//     if(weather === "snowing"){
-//         alert("its snowing");
-//     } else if ( weather === "raining"){
-//         alert ("its raining ");
-//     } else if ( weather === "sunning"){
-//         alert("its sunny");
-//     } else {
-//         alert(" have a nice day!");
-//     }
-// }
-// checkWeather(weather:"Have a nice day");
+function checkWeather(weather){
+    if(weather === "snowing"){
+        alert("its snowing");
+    } else if ( weather === "raining"){
+        alert ("its raining ");
+    } else if ( weather === "sunning"){
+        alert("its sunny");
+    } else {
+        alert(" have a nice day!");
+    }
+}
+checkWeather(weather:"Have a nice day");
 
 
 
@@ -372,9 +372,6 @@ function checkTrafficLight(trafficLight){
     }
 }
 console.log(checkTrafficLight("green"));
-
-
-
 
 
 
