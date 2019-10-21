@@ -27,8 +27,9 @@
      * list. You will need an opening AND closing <ul> tags around the entire
      * string, and <li> tags around each planet.
      */
-    var planetstring =
+    // var planetsString = "Mercury" | "<br/>" | 'Venus' | "<br/> " |"Earth" | "<br/>" | "Mars"| "<br/>" | "Jupiter" | "<br/>" | "Saturn" |"<br/>" |"Uranus" |"<br/>"| "Neptune";
+    var planetsArray = planetsString.split("<br>")
 
-
+console.log(planetsArray);
 
 })();

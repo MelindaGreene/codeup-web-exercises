@@ -125,3 +125,8 @@ alert ("Great, you should tip $" + howmuch);
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
+function applyDiscount(originalPrice, discountPercentage) {
+    return originalPrice - (originalPrice * discountPercentage);
+}
+
+console.log(applyDiscount(100, .2));

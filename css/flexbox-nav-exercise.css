@@ -10,13 +10,11 @@ nav {
     justify-content: space-between;
     margin: 1em;
     height: em;
-    background-color: #3B94D9;
-    color: #cbffcd;
+    color: #000000;
     position:fixed;
     width: 100%;
     top: 0;
     padding:3px 10vw;
-    border-bottom: #9f4659 3px solid;
     box-shadow: white;
      }
 a {
@@ -31,39 +29,36 @@ ul {
     justify-content: center;
     padding:0;
 }
-
+li>a{
+    color:black;
+}
 li {
     display: inline-block;
     margin: 1em;
     text-shadow: 1px 1px black;
 }
 nav a:hover{
-    color: #373fff;
+    color: #000000;
 }
 nav a:active{
     color: orangered;
 
 }
-h2>a {
+h2 {
+    font-family: "Work Sans";
     font-size: 2.2em;
     position: absolute;
+    color: black;
+
     /*With The Calc Function Calc*/
     top: calc(50% - 38px);
     left: calc(50% - calc(117px / 2));
-    /* With Transform */
-    /*top: 50%;*/
-    /*left: 50%;*/
-    /*transform: translate(-50%, -50%);*/
-    font-family: 'Fugaz One', cursive;
-    text-shadow: 3px 3px #373fff;
+
 }
-h2>a:hover {
-    text-shadow: 3px 3px whitesmoke;
-}
-li>a:hover {
-    text-shadow: 1px 1px whitesmoke;
-}
+/*li>a:hover {*/
+/*    text-shadow: 1px 1px whitesmoke;*/
+/*}*/
 body{
-    background: #0fb784;
+    background: #d4debd;
     color: #0a1428;
 }

@@ -63,14 +63,17 @@
         console.log();
         shoppers.forEach(function (shopper) {
             console.log(" Hello " + shopper.name + " today you spent $" + shopper.amount + " with a discount of 12% of purchased items over $200 the discount you'll recieve today is " + shopper.amount * .12 + " !");
-
-
-
         });
+
+        // }else{
+        //     console.log( " Im sorry " + shoppers.name + " , but there is no discount today,your total amount of " + shoppers.amount + " doesnt excede $200! to receive the discount ");
+
+        // });
     }
+
+
 Discount();
-// }else{
-//     console.log( " Im sorry " + shoppers.name + " , but there is no discount today,your total amount of " + shoppers.amount + " doesnt excede $200! to receive the discount ");
+
 
 
 
@@ -89,6 +92,19 @@ Discount();
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+
+
+    var books = [
+        {number:1,title: "Fight Club", firstName: 'Chuck', lastName: "P."},
+        {number:2,title: "Beautiful,You", firstName: 'Chuck', lastName: "P."},
+        {number:3,title: "Choke", firstName: 'Chuck', lastName: "P."},
+        {number:4,title: "Damned", firstName: 'Chuck', lastName: "P."},
+        {number:5,title: "Doomed", firstName: 'Chuck', lastName: "P."}
+    ];
+
+
+
+
 
     /**
      * TODO:
@@ -114,6 +130,15 @@ Discount();
      *      ---
      *      ...
      */
+  function bookOrg(){
+     console.log();
+     books.forEach(function (books) {
+         console.log("Book #" + books.number + " Title: " + books.title  + " Author: "+ books.firstName + books.lastName)
+     })
+
+    }
+bookOrg();
+
 
     /**
      * Bonus:
@@ -125,5 +150,26 @@ Discount();
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+
+    function createBook(){
+        console.log();
+        books.forEach(function (books) {
+            console.log("Book #" + books.number + " Title: " + books.title  + " Author: "+ books.firstName + books.lastName)
+        })
+
+    }
+
+    createBook();
+
+    function showBookInfo(){
+        console.log();
+        books.forEach(function (books) {
+            console.log("Book #" + books.number + " Title: " + books.title  + " Author: "+ books.firstName + books.lastName)
+        })
+
+    }
+
+
+showBookInfo();
 
 })();
