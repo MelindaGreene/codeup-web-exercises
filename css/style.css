@@ -32,11 +32,11 @@ a:hover {
 
 .box {
     border: 0px;
-    width: 1550px;
+    width: auto;
     height: 50px;
     padding:70px;
     font-weight: bold;
-    margin-bottom: 0px;
+    margin-bottom: px;
     box-shadow: 0 5px 15px rgba( 10,10,10, .5);
     font-size: 45px;
     background-image: linear-gradient(navajowhite, lightgray);
@@ -53,13 +53,13 @@ a:hover {
 
 .specialbox {
     border: 5px solid white;
-    width: 210px;
+    width: 220px;
     height: 150px;
     padding:50px;
     color: #fff;
-    margin-top: 0px;
+    margin-top: 20px;
     margin-right: 180px;
-    margin-left: 54px;
+    margin-left: 90px;
     margin-bottom: 5px;
     box-shadow: 0 5px 15px rgba(251, 173, 3, 0.95);
     font-family: 'Baloo Da', cursive;
@@ -78,6 +78,7 @@ a:hover {
     float: left;
     background-color: limegreen;
     text-align: left;
+
 }
 
 
@@ -101,6 +102,7 @@ a:hover {
 }
 
 #product {
+    margin-top: 700px;
     text-align: center;
     color: goldenrod;
     font-size: 24px;
@@ -119,7 +121,8 @@ img {
     margin: 4px;
     border:0px solid #021a40;
     box-shadow: 0 5px 15px rgba( 10,10,10, .5);
-
+    margin-bottom: -50px;
+    margin-left: 100px;
 }
 
 table th:hover {
@@ -127,11 +130,13 @@ table th:hover {
 }
 
 table, th, td {
+    margin-top: 300px;
      color: olive;
     border: 5px solid #fff;
     padding: 15px;
 }
 table{
+    margin: 200px;
     border-collapse: collapse;
     margin-left:auto;
     margin-right:auto;
