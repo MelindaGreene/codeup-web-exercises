@@ -1,14 +1,17 @@
 
 * {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
 
 body, html {
     height: 100%;
-    width: 60%;
+    width: 70%;
     background-color: #cbffcd;
     font-family: Arial, Ubuntu, sans-serif;
+
 }
 
 form {
@@ -16,10 +19,12 @@ form {
     /* There must be 1em between the content and the border of this element */
     padding: 1em;
     margin: 1em;
+    align-content: center;
 
 }
 
 fieldset {
+
     -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
@@ -64,7 +69,7 @@ fieldset {
     margin: .5em 0;
     width: calc(100% - 4px);
     padding: 4px 0;
-    width: 100px;
+    /*width: 100px;*/
 
 }
 
@@ -76,12 +81,12 @@ fieldset {
     padding: 8px 0;
     color: white;
     font-weight: bold;
-    border 1px color: lightgray;
+    box: 1px lightgray;
 
 
 }
 
 .btn-block {
     /* This element should use 100% of the width */
-    width: 80%;
+    width: 100%;
 }

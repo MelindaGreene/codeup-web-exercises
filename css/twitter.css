@@ -56,8 +56,9 @@ a {
     color: var(--main-link-color);
     background: var(--light-bg);
     font-weight: bold;
-    padding: 8px;
+    padding: 6px;
     border-radius: 5px;
+    margin-top: 20px;
 }
 .btn-large {
     font-size: 1.3em;
@@ -103,19 +104,22 @@ a {
     margin: .5em 0;
     width: calc(25% - 1em);
     float: right;
-
 }
 
 .container {
     margin: 2em;
+
 }
 
 .media {
     width: 100%;
     --light-bg: light;
-    border-bottom: 1px;
+    border-spacing: 20px;
+    /*border-bottom: 1px;*/
     padding: .5em;
     overflow: auto;
+    border: 1px solid #e5ecf1;
+
 }
 
 .media-image {
@@ -126,7 +130,7 @@ a {
 
 .media-body {
     width: 100%;
-    position:left;
+    /*position:left;*/
     calc(100% - 50px)
 }
 
