@@ -11,8 +11,7 @@
      * console.log planetsArray to check your work
      */
 
-
-
+    // next
 
 
     console.log(planetsArray);
