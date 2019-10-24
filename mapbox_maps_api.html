@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First Mapbox Map</title>
+    <!-- Mapbox CSS -->
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+    <!-- Custom CSS -->
+    <style>
+        #map {
+            /* the width and height may be set to any size */
+            width: 100%;
+            height: 700px;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1>My First Mapbox Map!</h1>
+
+<!-- The HTML element that serves as the Mapbox container -->
+<div id='map'></div>
+
+<!-- Mapbox JS -->
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+<script src="js/keys.js"></script>
+<!-- Custom JS -->
+<script>
+    mapboxgl.accessToken = mapboxToken;
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v9',
+        zoom: 10,
+        center: [-98.4916, 29.4252]
+    });
+
+
+    .mapboxgl-popup {
+        max-width: 200px;
+    }
+
+</script>
+
+<!--MY GEOCODE-->
+<script>
+    function geocode(search, token) {
+        var baseUrl = 'https://api.mapbox.com';
+        var endPoint = '/geocoding/v5/mapbox.places/';
+        return fetch(baseUrl + endPoint + encodeURIComponent(search) + '.json' + "?" + 'access_token=' + token)
+            .then(function(res) {
+                return res.json();
+                // to get all the data from the request, comment out the following three lines...
+            }).then(function(data) {
+                return data.features[0].center;
+            });
+    }
+
+
+    // create a var with resturants and
+    // create a  var with then address and name
+    //create mulitiple geocodes
+
+
+    // // restarray.forEach(function (rest){
+    // //     console.log
+    // PUT GEO CODE IN HERE
+    // ALSO WITH MARKER IN HERE
+    //
+    // var marker = new mapboxgl.Marker(markerOptions)
+    //     .setLngLat([-98.488436, 29.426259])
+    //     .addTo(map)
+    //     .setPopup(popop)
+    //
+    // // });
+    //})
+    //
+    // function geocode(rest.address, mapboxToken) {
+    //     var baseUrl = 'https://api.mapbox.com';
+    //     var endPoint = '/geocoding/v5/mapbox.places/';
+    //     return fetch(baseUrl + endPoint + encodeURIComponent(search) + '.json' + "?" + 'access_token=' + token)
+    //         .then(function(res) {
+    //             return res.json();
+    //             // to get all the data from the request, comment out the following three lines...
+    //         }).then(function(data) {
+    //             return data.features[0].center;
+    //         });
+    // }
+    //
+
+
+    <!--MY FAVORITE RESTAURANTS-->
+
+<!--FIRST -->
+
+
+
+
+
+    var markerOptions = {
+        color: '#43ffe9',
+        draggable: true
+    };
+
+    var marker = new mapboxgl.Marker(markerOptions)
+        .setLngLat([-98.488436, 29.426259])
+        .addTo(map);
+        .setPopup(popop)
+    var popup = new mapboxgl.Popup({closeOnClick: false})
+        .setLngLat([-98.488436, 29.426259])
+        .setText("Playland")
+        .addTo(map)
+    marker.setPopup(popup)
+
+
+    geocode("400 E Houston St, San Antonio, TX 7820",mapboxToken).then(function(result) {
+        console.log(result);
+        map.setCenter(result);
+        new mapboxgl.Marker()
+            .setLngLat(result)
+            .addTo(map)
+
+
+});
+
+
+
+
+// END OF FIRST
+
+//
+// // SECOND
+//
+    var markerOptions = {
+        color: '#43ffe9',
+        draggable: true
+    };
+
+    var marker = new mapboxgl.Marker(markerOptions)
+        .setLngLat([-98.479071, 29.497611])
+        .addTo(map);
+    var popup = new mapboxgl.Popup()
+        .setLngLat([-98.479071, 29.497611])
+        .setText("Ida Claire")
+        .addTo(map)
+    marker.setPopup(popup)
+
+
+geocode("7300 Jones Maltsberger Rd, San Antonio, TX 78209",mapboxToken).then(function(result) {
+    console.log(result);
+    map.setCenter(result);
+    new mapboxgl.Marker()
+        .setLngLat(result)
+        .addTo(map)
+
+});
+//     // END OF SECOND
+//
+//
+//  // THIRD
+//
+
+    var markerOptions = {
+        color: '#43ffe9',
+        draggable: true
+    };
+
+    var marker = new mapboxgl.Marker(markerOptions)
+        .setLngLat([ -98.474379, 29.424868])
+        .addTo(map);
+    var popup = new mapboxgl.Popup()
+        .setLngLat([ -98.474379, 29.424868])
+        .setText("Pastiche")
+        .addTo(map)
+    marker.setPopup(popup)
+
+
+    geocode("1506 E Houston St, San Antonio, TX 78202",mapboxToken).then(function(result) {
+        console.log(result);
+        map.setCenter(result);
+        new mapboxgl.Marker()
+            .setLngLat(result)
+            .addTo(map)
+
+});
+// // END OF THIRD
+//
+// // FOURTH
+    var markerOptions = {
+        color: '#43ffe9',
+        draggable: true
+    };
+
+    var marker = new mapboxgl.Marker(markerOptions)
+        .setLngLat([ -98.5081, 29.462174])
+        .addTo(map);
+    var popup = new mapboxgl.Popup()
+        .setLngLat([ -98.5081, 29.462174])
+        .setText("SoHill Cafe")
+        .addTo(map)
+    marker.setPopup(popup)
+
+
+    geocode("1719 Blanco Rd, San Antonio, TX 78212",mapboxToken).then(function(result) {
+        console.log(result);
+        map.setCenter(result);
+        new mapboxgl.Marker()
+            .setLngLat(result)
+            .addTo(map)
+
+    });
+
+// END OF FOURTH
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--&lt;!&ndash;MAPBOX JAVASCRIPT&ndash;&gt;-->
+<!--<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>-->
+<!--<script src="js/keys.js"></script>-->
+<!--&lt;!&ndash;<script src="js/mapbox-geocoder-utils.js"></script>&ndash;&gt;-->
+<!--&lt;!&ndash;<script src=" js/mapbox-api-lec.js"></script>&ndash;&gt;-->
+</body>
+</html>
