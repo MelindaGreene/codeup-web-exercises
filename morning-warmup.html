@@ -162,10 +162,111 @@ alert (helloThere(promptedResponse));
             age = "29"
         ]
 
+   </script>
+<script>
 
+   function Fizzbuzz(x){
+       if (x %  3 == 0 ){
+           return "fizz"
+       } else if ( x % 5 == 0){
+           return "buzz"
+       }else{
+           return false
+       }
+
+   }
+
+   function returnFive(x){
+       if(typeof x === 5 ){
+           return x
+       }else{
+           return false
+       }
+   }
+
+   var shoppingCarts = [
+       {
+           apples: 8,
+           bananas: 2,
+           oranges: 4,
+           grapes: 24
+       }, {
+           apples: 3,
+           bananas: 6,
+           oranges: 8,
+           grapes: 12
+       } , {
+           apples: 0,
+           bananas: 12,
+           oranges: 0,
+           grapes: 0
+       } , {
+           apples: 4,
+           bananas: 0,
+           oranges: 8,
+           grapes: 10
+       }
+   ];
+
+
+
+   function mostSpentOnItem(cart){
+       var winner =carts [0];
+
+       shoppingCarts.oranges.forEach(function(item){
+           if (cart.oranges > winner.oranges) {
+               winner = cart;
+           }
+       });
+       return winner;
+
+   }
+
+   var students = [
+       {
+           name: "Mary",
+           grade: 10,
+           gpa: 3.7,
+           isRegistered: true
+       },
+       {
+           name: "Tim",
+           grade: 12,
+           gpa: 3.2,
+           isRegistered: false
+       },
+       {
+           name: "Ellie",
+           grade: 9,
+           gpa: 4.0,
+           isRegistered: false
+       },
+       {
+           name: "Alex",
+           grade: 10,
+           gpa: 3.9,
+           isRegistered: true
+       }
+   ]
+
+
+function notReg(x) {
+    var noGood = [];
+
+    students.isRegistered.forEach(function (x)){
+        if (students !== false)
+            noGood.push(students)
     }
+});
+    return noGood;
 
 
+
+
+
+
+
+</script>
 console.log(createPersonObject())
 
 
