@@ -15,6 +15,7 @@
 // jQuery download page --> https://code.jquery.com/jquery/
 
 
+
 // Use a CDN
 //<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
@@ -34,14 +35,15 @@
 
 // Javascript version: This will wait until all images are loaded on page
 
-window.onload = function() {
-	alert( 'The page has finished loading!' );
-}
+// window.onload = function() {
+// 	alert( 'The page has finished loading!' );
+// }
 
 // jQuery version: This will fire before the images are loaded
 // We use jQuery to select the document
 // we add the event listener 'ready'
 // the event listener will fire before the images are loaded
+
 $(document).ready(function() {
 	alert( 'The DOM has finished loading!' );
 });
