@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <title>Konami Code</title>
+</head>
+
+<h1>
+
+      <span
+              class="txt-rotate flash"
+              data-period="2000"
+              data-rotate='[ "Enter Konami Code..." ]'></span>
+</h1>
+<body>
+
+<!--Background -->
+
+<!--<div class="bg"></div>-->
+<!--<div class="bg bg2"></div>-->
+<!--<div class="bg bg3"></div>-->
+<!--<div class="content">-->
+
+<!--</div>-->
+<!--end-->
+
+
+
+
+
+<style>
+   h1{
+       font-family: 'VT323',serif;
+       color: #222;
+       width:300px;
+       position: absolute;
+       left:50%;
+       top: 50%;
+       padding: 0 10px;
+       transform: translate(-50%, -50%);
+    }
+
+    /*html {*/
+    /*    height:100%;*/
+    /*}*/
+
+    /*body {*/
+    /*    margin:0;*/
+    /*}*/
+
+    /*.bg {*/
+    /*    animation:slide 3s ease-in-out infinite alternate;*/
+    /*    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);*/
+    /*    bottom:0;*/
+    /*    left:-50%;*/
+    /*    opacity:.5;*/
+    /*    position:fixed;*/
+    /*    right:-50%;*/
+    /*    top:0;*/
+    /*    z-index:-1;*/
+    /*}*/
+
+    /*.bg2 {*/
+    /*    animation-direction:alternate-reverse;*/
+    /*    animation-duration:4s;*/
+    /*}*/
+
+    /*.bg3 {*/
+    /*    animation-duration:5s;*/
+    /*}*/
+
+    /*.content {*/
+    /*    background-color:rgba(255,255,255,.8);*/
+    /*    border-radius:.25em;*/
+    /*    box-shadow:0 0 .25em rgba(0,0,0,.25);*/
+    /*    box-sizing:border-box;*/
+    /*    left:50%;*/
+    /*    padding:10vmin;*/
+    /*    position:fixed;*/
+    /*    text-align:center;*/
+    /*    top:50%;*/
+    /*    transform:translate(-50%, -50%);*/
+    /*}*/
+
+    /*h1 {*/
+    /*    font-family:monospace;*/
+    /*}*/
+
+    /*@keyframes slide {*/
+    /*    0% {*/
+    /*        transform:translateX(-25%);*/
+    /*    }*/
+    /*    100% {*/
+    /*        transform:translateX(25%);*/
+    /*    }*/
+    /*}*/
+
+
+
+
+
+
+    /** {*/
+    /*    margin: 0;*/
+    /*    padding: 0;*/
+    /*}*/
+
+    /*body {*/
+    /*    font-family: sans-serif;*/
+    /*    font-weight: bold;*/
+    /*    text-align: center;*/
+    /*}*/
+
+    /*.center {*/
+    /*    position: absolute;*/
+    /*    top: 45%;*/
+    /*    width: 100%;*/
+    /*}*/
+
+    /*article {*/
+    /*    background-color: hsl(0, 0%, 90%);*/
+    /*    padding: .25em .5em .5em;*/
+    /*    border-radius: 1em;*/
+    /*    display: inline-block;*/
+    /*    font-size: 50px;*/
+    /*    text-align: center;*/
+    /*}*/
+
+    /*i {*/
+    /*    vertical-align: middle;*/
+    /*    line-height: 100%;*/
+    /*    font-style: normal;*/
+    /*    transition: .5s background-color, .5s color;*/
+    /*}*/
+
+    /*i.active {*/
+    /*    color: cyan;*/
+    /*}*/
+
+    /*i:not(.fa).active {*/
+    /*    background-color: cyan;*/
+    /*}*/
+
+    /*i:not(.fa) {*/
+    /*    font-size: .55em;*/
+    /*    padding: .25em .5em;*/
+    /*    color: white;*/
+    /*    background: black;*/
+    /*    border-radius: 1.5em;*/
+    /*}*/
+
+    /*.active {*/
+    /*    animation: bounce .25s forwards cubic-bezier(0, .01, .71, -1.29);*/
+    /*}*/
+
+    /*.activated {*/
+    /*    animation: gonuts 1s infinite linear;*/
+    /*}*/
+
+    /*@keyframes bounce {*/
+    /*    0% {*/
+    /*        transform: translateY(30px);*/
+    /*    }*/
+    /*    50% {*/
+    /*        transform: translateY(-30px);*/
+    /*    }*/
+    /*    100% {*/
+    /*        transform: translateY(0);*/
+    /*    }*/
+    /*}*/
+
+    /*@keyframes gonuts {*/
+    /*    0% {*/
+    /*        transform: rotate(0deg) scale(1);*/
+    /*        background-color: purple;*/
+    /*    }*/
+    /*    25% {*/
+    /*        background-color: red;*/
+    /*    }*/
+    /*    50% {*/
+    /*        transform: rotate(180deg) scale(1);*/
+    /*        background-color: lime;*/
+    /*    }*/
+    /*    100% {*/
+    /*        transform: rotate(360deg) scale(1);*/
+    /*        background-color: cyan;*/
+    /*    }*/
+    /*}*/
+
+</style>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="js/jquery-2.2.4.js"></script>
+<script>
+    "use strict";
+
+
+    // ENTER KONAMI CODE
+
+    var TxtRotate = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtRotate.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 300 - Math.random() * 100;
+
+
+        setTimeout(function() {
+            that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('txt-rotate');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-rotate');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+                new TxtRotate(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+    };
+
+
+// END
+
+    $('body').css('background-color', 'powderblue');
+
+    $(document).keydown(function (e) {
+        var keyCode = e.keyCode || e.which;
+        var konami = {up: 38, down: 40, left: 37, right: 39, b: 66, a: 65, enter: 13 };
+        switch (keyCode) {
+
+            case konami.up:
+                break;
+            case konami.up:
+                break;
+            case konami.down:
+                break;
+            case konami.down:
+                break;
+            case konami.left:
+                break;
+            case konami.right:
+                break;
+            case konami.left:
+                break;
+            case konami.right:
+                break;
+            case konami.b:
+                break;
+            case konami.a:
+                break;
+            case konami.enter:
+                $('body').css('background-color', 'pink');
+                alert("You won 30 lives");
+        }
+    });
+
+
+
+
+
+</script>
+</body>
+</html>
