@@ -5,6 +5,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <audio id="pop">
+        <source src="audio/202575__sergeeo__xylophone-for-cartoon-3.wav" type="audio/mpeg">
+    </audio>
+
     <title>Konami Code</title>
 </head>
 
@@ -17,15 +21,10 @@
 </h1>
 <body>
 
+
+<h3> Press UP, UP, DOWN, DOWN, LEFT, RIGHT, LEFT, RIGHT, B, A, </h3>
+<h3>Then Press ENTER</h3>
 <!--Background -->
-
-<!--<div class="bg"></div>-->
-<!--<div class="bg bg2"></div>-->
-<!--<div class="bg bg3"></div>-->
-<!--<div class="content">-->
-
-<!--</div>-->
-<!--end-->
 
 
 
@@ -43,152 +42,13 @@
        transform: translate(-50%, -50%);
     }
 
-    /*html {*/
-    /*    height:100%;*/
-    /*}*/
 
-    /*body {*/
-    /*    margin:0;*/
-    /*}*/
-
-    /*.bg {*/
-    /*    animation:slide 3s ease-in-out infinite alternate;*/
-    /*    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);*/
-    /*    bottom:0;*/
-    /*    left:-50%;*/
-    /*    opacity:.5;*/
-    /*    position:fixed;*/
-    /*    right:-50%;*/
-    /*    top:0;*/
-    /*    z-index:-1;*/
-    /*}*/
-
-    /*.bg2 {*/
-    /*    animation-direction:alternate-reverse;*/
-    /*    animation-duration:4s;*/
-    /*}*/
-
-    /*.bg3 {*/
-    /*    animation-duration:5s;*/
-    /*}*/
-
-    /*.content {*/
-    /*    background-color:rgba(255,255,255,.8);*/
-    /*    border-radius:.25em;*/
-    /*    box-shadow:0 0 .25em rgba(0,0,0,.25);*/
-    /*    box-sizing:border-box;*/
-    /*    left:50%;*/
-    /*    padding:10vmin;*/
-    /*    position:fixed;*/
-    /*    text-align:center;*/
-    /*    top:50%;*/
-    /*    transform:translate(-50%, -50%);*/
-    /*}*/
-
-    /*h1 {*/
-    /*    font-family:monospace;*/
-    /*}*/
-
-    /*@keyframes slide {*/
-    /*    0% {*/
-    /*        transform:translateX(-25%);*/
-    /*    }*/
-    /*    100% {*/
-    /*        transform:translateX(25%);*/
-    /*    }*/
-    /*}*/
+   h3{
+       position
+   font-family: 'VT323',serif;
+   }
 
 
-
-
-
-
-    /** {*/
-    /*    margin: 0;*/
-    /*    padding: 0;*/
-    /*}*/
-
-    /*body {*/
-    /*    font-family: sans-serif;*/
-    /*    font-weight: bold;*/
-    /*    text-align: center;*/
-    /*}*/
-
-    /*.center {*/
-    /*    position: absolute;*/
-    /*    top: 45%;*/
-    /*    width: 100%;*/
-    /*}*/
-
-    /*article {*/
-    /*    background-color: hsl(0, 0%, 90%);*/
-    /*    padding: .25em .5em .5em;*/
-    /*    border-radius: 1em;*/
-    /*    display: inline-block;*/
-    /*    font-size: 50px;*/
-    /*    text-align: center;*/
-    /*}*/
-
-    /*i {*/
-    /*    vertical-align: middle;*/
-    /*    line-height: 100%;*/
-    /*    font-style: normal;*/
-    /*    transition: .5s background-color, .5s color;*/
-    /*}*/
-
-    /*i.active {*/
-    /*    color: cyan;*/
-    /*}*/
-
-    /*i:not(.fa).active {*/
-    /*    background-color: cyan;*/
-    /*}*/
-
-    /*i:not(.fa) {*/
-    /*    font-size: .55em;*/
-    /*    padding: .25em .5em;*/
-    /*    color: white;*/
-    /*    background: black;*/
-    /*    border-radius: 1.5em;*/
-    /*}*/
-
-    /*.active {*/
-    /*    animation: bounce .25s forwards cubic-bezier(0, .01, .71, -1.29);*/
-    /*}*/
-
-    /*.activated {*/
-    /*    animation: gonuts 1s infinite linear;*/
-    /*}*/
-
-    /*@keyframes bounce {*/
-    /*    0% {*/
-    /*        transform: translateY(30px);*/
-    /*    }*/
-    /*    50% {*/
-    /*        transform: translateY(-30px);*/
-    /*    }*/
-    /*    100% {*/
-    /*        transform: translateY(0);*/
-    /*    }*/
-    /*}*/
-
-    /*@keyframes gonuts {*/
-    /*    0% {*/
-    /*        transform: rotate(0deg) scale(1);*/
-    /*        background-color: purple;*/
-    /*    }*/
-    /*    25% {*/
-    /*        background-color: red;*/
-    /*    }*/
-    /*    50% {*/
-    /*        transform: rotate(180deg) scale(1);*/
-    /*        background-color: lime;*/
-    /*    }*/
-    /*    100% {*/
-    /*        transform: rotate(360deg) scale(1);*/
-    /*        background-color: cyan;*/
-    /*    }*/
-    /*}*/
 
 </style>
 
@@ -280,6 +140,7 @@
             case konami.a:
                 break;
             case konami.enter:
+                $('audio#pop')[0].play()
                 $('body').css('background-color', 'pink');
                 alert("You won 30 lives");
         }
