@@ -61,7 +61,7 @@ $(document).ready(function() {
 	//	$('tag_name')
 
 	// TODO TOGETHER: Change the background color of all paragraph tags
-	$('p').css('background-color', 'pink');
+
 
 	// TODO: Explore the following JS Bin example:
 	//  https://jsbin.com/gayir/1/edit?js,output

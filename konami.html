@@ -27,11 +27,33 @@
 <!--Background -->
 
 
-
+<img class='bubbles' src="img/hiclipart.com-id_qdcwz.png" alt="bubble">
+<!--<img class= 'blossom' src=" img/blossom.png">-->
 
 
 <style>
-   h1{
+
+    .bubbles{
+                 position: absolute;
+                 left: 110%;
+                 bottom:0;
+             }
+
+    /*.blossom{*/
+    /*    position: absolute;*/
+    /*    left: 110%;*/
+    /*    bottom:0;*/
+    /*}*/
+
+    .animateIn{
+        animation: 2s left forwards ease;
+    }
+
+    .flash{
+        animation: flash 1s linear infinite;
+    }
+
+    h1{
        font-family: 'VT323',serif;
        color: #222;
        width:300px;
@@ -44,7 +66,9 @@
 
 
    h3{
-       position
+    left: 50%;
+       top: 50%;
+
    font-family: 'VT323',serif;
    }
 
@@ -82,6 +106,7 @@
         var fullTxt = this.toRotate[i];
 
         if (this.isDeleting) {
+
             this.txt = fullTxt.substring(0, this.txt.length - 1);
         } else {
             this.txt = fullTxt.substring(0, this.txt.length + 1);
@@ -94,7 +119,9 @@
 
 
         setTimeout(function() {
+
             that.tick();
+
         }, delta);
     };
 
@@ -121,33 +148,63 @@
 
             case konami.up:
                 break;
-            case konami.up:
-                break;
+            // case konami.up:
+            //     break;
             case konami.down:
                 break;
-            case konami.down:
-                break;
+            // case konami.down:
+            //     break;
             case konami.left:
                 break;
             case konami.right:
                 break;
-            case konami.left:
-                break;
-            case konami.right:
-                break;
+            // case konami.left:
+            //     break;
+            // case konami.right:
+            //     break;
             case konami.b:
                 break;
             case konami.a:
                 break;
             case konami.enter:
-                $('audio#pop')[0].play()
                 $('body').css('background-color', 'pink');
+
+                $(document).keypress(function(event){
+                    console.log(event.keyCode);
+                    if(event.keyCode === 13){
+                        $('.bubbles').animate({
+                            left: '+5px'
+                        });
+                    }
+                });
                 alert("You won 30 lives");
+                $('audio#pop')[0].play();
+
+
+
+
+             //    $(document).keypress(function(event){
+             //        console.log(event.keyCode);
+             //        if(event.keyCode !== konami){
+             //           $('.blossom').animate({
+             //               left: '+5px'
+             //        });
+             //    }
+             //        alert('Try again');
+             // });
+                // alert("You won 30 lives");
+        // $(document).keypress(function(event){
+        //     console.log(event.keyCode);
+        //     if(event.keyCode === 13){
+        //         $('.bubbles').animate({
+        //             left: '+5px'
+        //         });
+        //     }
+        //
         }
+
+
     });
-
-
-
 
 
 </script>
