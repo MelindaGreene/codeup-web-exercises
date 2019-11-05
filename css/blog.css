@@ -14,13 +14,40 @@
 
 
 @media screen and (min-width: 800px) {
+html{
+    background-color: #e5ecf1;
+}
+#box1{
+    background-color: #060605;
+    width: 300px;
+    height: auto;
+}
+
+#main{
+    font-size: 50px;
+    font-family: 'Staatliches';
+    padding-left: 20px;
+}
+#main1{
+    font-size: 50px;
+    font-family: 'Staatliches'
+}
+.navbar-expand-lg {
+    height: 400px;
+}
+
+
+.navbar-brand{
+    font-family: 'Staatliches';
+}
+
 
 .centered {
         visibility: hidden;
     }
 
 h5 {
-        font-size: 40px;
+        font-size: 80px;
         padding-bottom: 90px;
         font-family: "Staatliches";
     }
@@ -37,15 +64,40 @@ h5 {
 
 }
 
-.card {
-    position: relative;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width: 550px
+#img3{
+    align-content: center;
+    width:auto;
+    height:495px;
+
+
 }
 
+
+.row{
+    background-color: #bfc5de;
+}
+.card-body{
+    border-radius: 20px;
+    background-color: #e5ecf1;
+}
+.card {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    margin-top: 70px;
+    padding-top: 30px;
+    /*padding-left: 30px;*/
+    /*padding-right: 30px;*/
+    /*padding-bottom: 30px;*/
+    width: 550px
+
+}
+.card-body {
+
+    /*background-color: #d4debd;*/
+}
 #card2{
-    position: right;
+    /*position: right;*/
     padding-top: 50px;
     padding-bottom: 50px;
     width: 550px
