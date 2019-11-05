@@ -14,15 +14,82 @@
 
 
 @media screen and (min-width: 800px) {
+
+
+
 html{
     background-color: #e5ecf1;
 }
+
+#logo>img{
+    border-radius: 2000px;
+    margin-bottom: 50px ;
+}
 #box1{
-    background-color: #060605;
-    width: 300px;
-    height: auto;
+    text-align: center;
+    display: inline-block;
+    background-color: #dcb7bc;
+    padding-top: 50px;
+    padding-right: 20px;
+    width: 430px;
+    height: 500px;
+
 }
 
+#skin {
+    position: absolute;
+    top: 280px;
+    left: 80px;
+
+    width: 290px;
+    font-size: 60px;
+    height: 100px;
+
+    background-color: white;
+    opacity: 0.5;
+}
+#box2{
+    text-align: center;
+    display: inline-block;
+    background-color: #dcb7bc;
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 430px;
+    height: 500px;
+
+
+}
+
+#fall{
+
+    position: absolute;
+    top: 280px;
+    left: 90px;
+
+    width: 280px;
+    font-size: 50px;
+    height: 100px;
+
+    background-color: white;
+    opacity: 0.5;
+}
+
+
+#makeup{
+
+    position: absolute;
+    top: 280px;
+    left: 90px;
+
+    width: 280px;
+    font-size: 50px;
+    height: 100px;
+
+    background-color: white;
+    opacity: 0.5;
+
+}
 #main{
     font-size: 50px;
     font-family: 'Staatliches';
@@ -41,7 +108,22 @@ html{
     font-family: 'Staatliches';
 }
 
+.col-sm{
+   margin-right: 90px;
+}
 
+.container{
+
+    /*display: flex;*/
+    flex-direction: column;
+    justify-content: flex-start;
+    /*padding-right: 200px;*/
+    /*padding-left: 400px;*/
+    margin-top: 50px;
+    margin-right: 300px;
+    margin-left: -300px;
+
+}
 .centered {
         visibility: hidden;
     }
@@ -71,13 +153,23 @@ h5 {
 
 
 }
-
+hr {
+    width: auto;
+   border: solid 30px grey;
+}
 
 .row{
+
+    width: 1100px;
+    height: 500px;
     background-color: #bfc5de;
+    margin-right: 400px;
+    margin-left: 400px;
+    justify-content: flex-start;
+
 }
 .card-body{
-    border-radius: 20px;
+    border-radius: 3px;
     background-color: #e5ecf1;
 }
 .card {
@@ -85,11 +177,12 @@ h5 {
     position: relative;
     margin: auto;
     margin-top: 70px;
-    padding-top: 30px;
+    /*padding-top: 30px;*/
     /*padding-left: 30px;*/
     /*padding-right: 30px;*/
     /*padding-bottom: 30px;*/
-    width: 550px
+    width: 550px;
+
 
 }
 .card-body {
@@ -104,6 +197,109 @@ h5 {
 
 }
 
+#ad1 {
+    width: 400px;
+
+}
+
+.card-text{
+    width: 350px;
+}
+
+#ad2{
+    width: 400px
+}
+
+.card-img-top2{
+    height: 500px
+}
+
+
+#blogtitle{
+    background-color: #dcb7bc;
+
+}
+.content{
+    display: none;
+}
+#myBtn:hover {
+        background-color: #555;
+    }
+
+#myBtn {
+
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+    }
+
+
+.fab {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+    }
+.fab {
+        /*background: #3B5998;*/
+        color: #7f90d6;
+    }
+
+
+/*MODAL BUTTON*/
+
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+        background-color: #fefefe;
+        /*margin: auto;*/
+        padding: 20px;
+        border: 1px solid #888;
+        width:400px;
+        height:200px;
+    }
+
+    /* The Close Button */
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /*END OF MODAL*/
 }
 
 
