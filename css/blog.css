@@ -24,6 +24,7 @@ html{
 #logo>img{
     border-radius: 2000px;
     margin-bottom: 50px ;
+    width:
 }
 #box1{
     text-align: center;
@@ -220,7 +221,7 @@ hr {
 
 }
 .content{
-    display: none;
+    */
 }
 #myBtn:hover {
         background-color: #555;
