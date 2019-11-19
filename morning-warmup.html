@@ -337,9 +337,47 @@ function randomBoo(x){
 }
 
 
+function onlyPositiveEvens(x){
+       var myPositiveEvens = [];
+       for(var i = 0; i < x.length; i++){
+           if(x[i] >= 0 && x [i] % 2 == 0 ){
+               myPositiveEvens.push(x[i]);
+           }
+       }
+       return myPositiveEvens
+   }
 
-</script>
+
+
+
 console.log(createPersonObject())
+
+
+// const evenNum =  new Promise((resolve, reject) =>  {
+//     if (num %2 === 0 ){
+//         resolve {
+//         } else {
+//          reject
+//         }
+//     }
+// }
+//
+
+   const myPromise = ()=> {
+       return new Promise((resolve, reject) => {
+           resolve('hello')
+       });
+   };
+
+myPromise().then(message => {
+    document.getElementById('body')[0]. innerHTML +=
+        `<h1>${message}</h1>`;
+
+});
+
+const piToSix= () => Math.PI.toFixed(6);
+
+
 
 
 

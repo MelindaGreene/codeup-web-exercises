@@ -2,123 +2,206 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> MAPBOX </title>
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
-    <link rel="stylesheet" href="weather.css">
+    <title>Weather Map</title>
+
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/weather-icons.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <script src="js/skycons.js"></script>
+    <style>
+        * {
+            /*box-sizing: border-box;*/
+        }
+        body {
+            /*background: #dd9b7b;*/
+            /*color: white;*/
+            font-family: arial;
+            background: -webkit-linear-gradient(left top, #F7D6E0, #E6C79C); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(bottom right, #F7D6E0, #E6C79C); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(bottom right, #F7D6E0, #E6C79C); /* For Firefox 3.6 to 15 */
+
+        }
+        .panel {
+            color: white;
+            margin-right: 40px;
+            /*margin-left: 5px;*/
+            margin-bottom: 20px;
+            /*background-color: #edba78;*/
+            width: 100%;
+            height: 300px;
+            padding: 1em;
+            text-align: center;
+            /*border: white 3px solid;*/
+            border-radius: 50px;
+            box-shadow: 0 30px 50px rgba(0,0,0,0.3);
+            font-family: 'Nunito',serif;
+        }
 
 
+        h1 {
+            font-size: 50px;
+            font-family: "Josefin Sans";
+            text-align: center;
+            color: white;
+        }
+        #map {
+            width: 100%;
+            height: 50vh;
+        }
+        .weather-panels {
+            display: flex;
+            justify-content: space-between;
+            /*border: 2px solid black;*/
+        }
+        /*.panel {*/
+        /*    background: rgba(220, 155, 185, 0.83);*/
+        /*    width: 100%;*/
+        /*    padding: 1em;*/
+        /*    text-align: center;*/
+        /*}*/
+        .panel:not(:last-child) {
+            /*border: 2px solid black;*/
+
+        }
+         .vl{
+             border-left: 1.5px solid white;
+             height: 350px;
+             margin-right: 40px;
+             margin-bottom: 10px;
+             border-radius: 20px;
+
+         }
+
+    </style>
 </head>
 <body>
 
-<div id='map' style='width: 700px; height: 500px;'></div>
+<h1>Weather Map</h1>
 
+<div id="weather-panels" class="weather-panels">
 
-<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js'></script>
-<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.css' type='text/css' />
+    <div>
+        <div class="icon">
 
-
-<script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoibWVsaW5kYWdyZWVuZSIsImEiOiJjazIzY25hanQwdm04M2ZxYzdoaXd6aDM2In0.Y-sadFFb6XmHIYDQrYXgqQ';
-    var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v9',
-        zoom: 2
-    });
-    map.addControl(new MapboxGeocoder({
-        accessToken: mapboxgl.accessToken,
-        mapboxgl: mapboxgl
-    }));
-</script>
-<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.css' type='text/css' />
-<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
-
-
-
-<!--ENTER THE LATITUDE AND LONG-->
-
-<form method="get">
-    <fieldset>
-        <ul>
-            <li>
-                <label for="latitude">Latitude</label>
-                <input type="text" id="latitude" placeholder="e.g. 42.9150747" required>
-            </li>
-
-            <li>
-                <label for="longitude">Longitude</label>
-                <input type="text" id="longitude" placeholder="e.g. -77.784323" required>
-            </li>
-        </ul>
-    </fieldset>
-
-    <button>Get Weather</button>
-</form>
-
-<!--END OF ENTERING AREA OF LATITUDE AND LONG-->
-
-
-
-
-
-
-
-<div class="container">
-    <h2 id=city>  </h2>
-    <div class ="middle">
-        <img src="" alt="icon">
-        <div class = "degrees">
-            <h1 id=temp>19</h1>
-            <span>$#176;</span>
         </div>
-        <h3 id="desc">Sunny</h3>
+
+        <h1>Loading...</h1>
     </div>
+
+
+
+    <div  id="panel2">
+
+        <h1>Loading...</h1>
+    </div>
+
+
+
+    <div  id="panel3">
+
+
+        <h1>Loading...</h1>
+    </div>
+
 </div>
 
+<div id="map"></div>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--    MAPBOX JAVASCRIPT-->
 <script src="js/jquery-2.2.4.js"></script>
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 <script src="js/keys.js"></script>
-<script src="js/weather.js"></script>
-<!--    END OF MAPBOX JAVASCRIPT-->
+<script>
+    "use strict";
+
+
+    mapboxgl.accessToken =  'pk.eyJ1IjoibWVsaW5kYWdyZWVuZSIsImEiOiJjazIzY25hanQwdm04M2ZxYzdoaXd6aDM2In0.Y-sadFFb6XmHIYDQrYXgqQ';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v9',
+        zoom: 9,
+        center: [-98.4936,  29.4241]
+    });
+
+
+    var marker = new mapboxgl.Marker()
+        .setLngLat(map.getCenter())
+        .addTo(map)
+        .setDraggable(true);
+
+
+
+    function buildPanel(fcast) {
+        var html = "";
+        html += '<div class=" vl"></div>';
+        html += '<div class="panel">';
+        html += '<h2>' + new Date(fcast.time * 1000).toDateString() + '</h2>';
+        html += '<h3>' + fcast.apparentTemperatureHigh + '&#176;/' + fcast.apparentTemperatureLow + '&#176;</h3>';
+        html += '<p><strong>Summary: </strong>' + fcast.icon + '<canvas id="icon1" width="50" height="50"/></p>';
+        html += '<p><strong>Humidity: </strong>' + fcast.humidity + '</p>';
+        html += '<p><strong>Wind: </strong>' + fcast.windSpeed + '</p>';
+        html += '<p><strong>Pressure: </strong>' +  fcast.pressure + '</p>';
+
+        html += '</div>';
+
+        return html;
+    }
+
+
+    // SUPPOSE TO BE A CLICK FUNCTION FOR WHEN DEGREES ARE CLICKED
+
+    $(".units").click(function (e) {
+        convertTemperature();
+    });
+    $(".temp").click(function (e) {
+        convertTemperature();
+    });
+// END OF CLICK FUNCTION
+
+    function buildPanels(data) {
+        var totalHtml = '';
+        for (var i = 0; i < 3; i += 1) {
+            totalHtml += buildPanel(data.daily.data[i]);
+        }
+        return totalHtml;
+    }
+    function makeWeatherReq(coordinates) {
+        var url = 'https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/f6dedf77ca9f43f5d2a6dfc053a8509b/';
+        fetch(url + coordinates.lat + ',' + coordinates.lng,  {mode: 'cors'}).then(function(res) {
+            return res.json();
+        }).then(function(data) {
+            console.log(data);
+            document.querySelector('#weather-panels').innerHTML = buildPanels(data);
+
+        });
+        // setIcon(icon, document.querySelector('.icon');
+    }
+
+
+    marker.on('dragend', function() {
+        makeWeatherReq(marker.getLngLat());
+    });
+    makeWeatherReq(marker.getLngLat());
+
+
+// ICON
+    function setIcon(icon, iconId) {
+        const skycons = new Skycons({ color: '#fff'});
+        //  replacing the - which is in the data with _ which is needed for skycons icons
+        //  and turning it to uppercase
+        const currentIcon = icon.replace(/-/g, '_').toUpperCase();
+
+        //  initiating the icon animation
+        skycons.play();
+        return skycons.set(iconId, Skycons[currentIcon]);
+    }
+
+
+
+</script>
 
 </body>
-
-
-
-
 </html>
