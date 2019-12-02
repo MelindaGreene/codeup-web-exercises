@@ -95,8 +95,7 @@ module.exports{
     getBooks: ()=> {
         return fetch(`/api/books`)
             .then(response => response.json());
-    },
-getBook
+    }
 
 
 }

@@ -1,0 +1,49 @@
+
+
+.acronym{
+    margin-left: 60px;
+}
+
+.slider{
+    visibility: hidden;
+    color:black;
+
+}
+
+p{
+    width: 100px;
+    height: 100px;
+    background-color: #9f8e3a;
+}
+
+
+#M{
+    background-color: #9f8e3a;
+    width: 100px;
+    height: 100px;
+    padding:0;
+    margin-bottom: 100px;
+    position: relative;
+    top: 92px;
+    left: 40px;
+
+
+
+}
+
+#Mbox{
+    background-color: #7b5eb7;
+    width: 100px;
+    height: 100px;
+    margin-top: 80px;
+
+    position: absolute;
+    top:  20px;
+    left: 65px;
+}
+/*div {*/
+/*    display: none;*/
+/*}*/
+/*a:hover + div {*/
+/*    display: block;*/
+/*}*/
